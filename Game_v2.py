@@ -104,11 +104,12 @@ def drawGrid(w,rows,surface):
 		pygame.draw.line(surface,(255,255,255),(x,0),(x,w))
 		pygame.draw.line(surface,(255,255,255),(0,y),(w,y))
 def redrawWindow(surface):
-	global rows, width,s
-	surface.fill((0,0,0))
-	s.draw(surface)
-	drawGrid(width,rows,surface)
-	pygame.display.update()
+    global rows, width, s
+    surface.fill((0,0,0))
+    s.draw(surface)
+    # snack.draw(surface)
+    drawGrid(width,rows, surface)
+    pygame.display.update()
 
 def randomSnack(rows,items):
 	pass
